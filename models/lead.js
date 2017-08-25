@@ -7,7 +7,7 @@ var leadSchema = new Schema({
         required: true
     },
     company:{
-        type: Strinpg,
+        type: String,
         required: true
     },
     email: {

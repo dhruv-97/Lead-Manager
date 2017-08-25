@@ -20,7 +20,7 @@ leadRouter.route('/')
 
 .post(function (req, res, next) {
     leads.create(req.body, function (err, lead) {
-        if (err) next(err);
+        if (err) throw(err);
         console.log('lead created!');
         var id = lead._id;
         res.writeHead(200, {
